@@ -1,0 +1,8 @@
+duckdb
+haversine
+matplotlib
+numpy
+pandas
+pyarrow
+pyspark
+seaborn
