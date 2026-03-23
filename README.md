@@ -186,7 +186,7 @@ A Power BI dashboard was created to explore taxi trip patterns across New York C
 - Average trip duration and distance
 
 ### Main Dashboard
-![Main Dashboard](screenshots/main_dashboard.png)
+![Main Dashboard](screenshots/main_dashboard.PNG)
 
 ## Key Insights
 
@@ -199,13 +199,13 @@ A Power BI dashboard was created to explore taxi trip patterns across New York C
 
 | Big Numbers | Map Pickups |
 |-------------|-------------|
-| ![](screenshots/big_numbers.png) | ![](screenshots/map_pickup.png) |
+| ![](screenshots/big_numbers.PNG) | ![](screenshots/map_pickup.PNG) |
 
 | Trips by Day | Trips by Hour |
 |--------------|--------------|
-| ![](screenshots/total_trips_per_day.png) | ![](screenshots/total_trips_per_hour.png) |
+| ![](screenshots/total_trips_per_day.PNG) | ![](screenshots/total_trips_per_hour.PNG) |
 
 | Average Duration and Distance |
 |--------------------------------|
-| ![](screenshots/big_numbers_pt2.png) |
+| ![](screenshots/big_numbers_pt2.PNG) |
 
