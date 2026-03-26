@@ -118,6 +118,7 @@ Extract → Transform → Load
 Raw CSV → Data Cleaning → Feature Engineering → Parquet Storage → SQL Analytics → Power BI Dashboard
 
 ## Architecture Diagram
+
         Raw Data (CSV Files)
                │
                ▼
@@ -125,7 +126,7 @@ Raw CSV → Data Cleaning → Feature Engineering → Parquet Storage → SQL An
                │
                ▼
         Transform Layer
-  (Data Cleaning + Feature Engineering)
+    (Data Cleaning + Feature Engineering)
                │
                ▼
            Load Layer
@@ -137,7 +138,6 @@ Raw CSV → Data Cleaning → Feature Engineering → Parquet Storage → SQL An
                │
                ▼
       Power BI Dashboard
-
 
 
 ## Data Preprocessing
