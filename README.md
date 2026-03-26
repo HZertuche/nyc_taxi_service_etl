@@ -213,13 +213,6 @@ ORDER BY weekday;
 ### Main Dashboard
 ![Main Dashboard](screenshots/main_dashboard.PNG)
 
-## Key Insights
-
-- Midtown Manhattan is the area with the highest taxi pickup demand.
-- Most taxi trips occur between 6 PM and 11 PM.
-- The average taxi trip lasts around 16 minutes.
-- Airports such as JFK and LaGuardia represent important pickup and dropoff hubs.
-
 ### Key Visualizations
 
 | Big Numbers | Map Pickups |

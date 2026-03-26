@@ -82,7 +82,7 @@ The dashboard includes the following visualizations:
 - The highest demand occurs during the evening period, from approximately 6:00 PM to 10:59 PM.
 - LaGuardia Airport and JFK Airport are the next major pickup hotspots outside of Manhattan.
 
-## Dashboard HigHlights
+## Dashboard Highlights
 Key analytical components included in the dashboard:
 
 - KPI cards summarizing total trips, key pickup hotspots, and overall taxi activity.
@@ -97,7 +97,7 @@ Key analytical components included in the dashboard:
 | ![Pickup and Dropoff](../screenshots/big_numbers.PNG) | ![Average Duration and Distance](../screenshots/big_numbers_pt2.PNG) |
 
 | Map Pickup |
-|----------------|------------|
+|----------------|
 | ![Map Pickup](../screenshots/map_pickup.PNG) |
 
 | Trips by Day | Trips by Hour |
