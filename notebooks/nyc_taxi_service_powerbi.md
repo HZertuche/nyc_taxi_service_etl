@@ -2,10 +2,21 @@
 This dashboard was built using Power BI to analyze taxi trip patterns in New York City, including pickup hotspots, demand by time, and typical trip characteristics.
 
 ## Full Dashboard
-![Main Dashboard](../screenshots/main_dashboard.png)
+![Main Dashboard](../screenshots/main_dashboard.PNG)
 
 ## Dashboard Objective
 - The goal of this dashboard is to analyze taxi trip patterns in New York City, identifying the most active pickup locations, peak demand hours, and typical trip characteristics.
+
+## Business Questions
+
+This dashboard aims to answer the following business questions:
+
+- Which areas in New York City concentrate the highest taxi pickup demand?
+- How dominant is Midtown Manhattan compared to other pickup locations?
+- What is the average trip duration and distance for NYC taxi rides?
+- Which days of the week experience the highest taxi demand?
+- During which hours of the day does taxi activity peak?
+- How significant are airport pickups (LaGuardia and JFK) compared to urban hotspots?
 
 ## Dataset
 The dataset contains information about taxi travel time and distance in New York City. Key features include:
@@ -23,14 +34,17 @@ The dataset contains information about taxi travel time and distance in New York
 - *trip_duration* - Trip duration in seconds
 
 ## Tech Stack
-- Python
-- Pandas / NumPy – Data manipulation
-- Haversine - Distance calculation
-- Parquet - Storage
-- DuckDB - Query results
-- Matplotlib / Seaborn – Exploratory Data Analysis (EDA)
-- Power BI - Data visualization dashboard
-- PySpark - Distributed ETL pipeline
+- **Python** – Data processing and pipeline scripting
+- **Amazon S3** – Scalable cloud data storage
+- **AWS Glue** – ETL data transformation
+- **Haversine** - Distance calculation
+- **DuckDB** – Local analytical SQL engine
+- **Pandas / NumPy** – Data manipulation
+- **Matplotlib / Seaborn** – Exploratory data analysis (EDA)
+- **Power BI** – Data visualization and dashboarding
+- **Parquet** – Columnar storage format optimized for analytics
+- **PySpark** - Distributed ETL pipeline
+
 
 ## Project Architecture
 
@@ -38,10 +52,10 @@ Extract → Transform → Load
 
 Raw CSV → Data Cleaning → Feature Engineering → Parquet Storage → SQL Analytics → Power BI Dashboard
 
-## Feature Engineering
-- *trip distance* - Distance in kilometers between pickup and dropoff locations
-- *hour* - Hour when the trip ocurred
-- *day of week* - Day when the trip ocurred
+## Metrics & Features
+- *trip_distance* - Distance in kilometers between pickup and dropoff locations
+- *hour* - Hour when the trip occurred
+- *day_of_week* - Day when the trip occurred
 - *pickup_area* - Areas defined by latitude and longitude
 - *total_trips* - Total number of trips
 - *trip_duration_min* - Trip duration converted from seconds to minutes
@@ -51,7 +65,7 @@ Raw CSV → Data Cleaning → Feature Engineering → Parquet Storage → SQL An
 ## Visualizations
 The dashboard includes the following visualizations:
 
-- KPI cards showing pickup and dropoff trips for the three main hotspots.
+- KPI cards summarizing pickup and dropoff trips for the three main hotspots.
 - KPI cards displaying the average trip duration and distance for all taxi trips in New York City
 - Heatmap showing the areas with the highest pickup activity.
 - A bar chart showing the total number of trips per day (colored by pickup area).
@@ -68,14 +82,24 @@ The dashboard includes the following visualizations:
 - The highest demand occurs during the evening period, from approximately 6:00 PM to 10:59 PM.
 - LaGuardia Airport and JFK Airport are the next major pickup hotspots outside of Manhattan.
 
+## Dashboard HigHlights
+Key analytical components included in the dashboard:
+
+- KPI cards summarizing total trips, key pickup hotspots, and overall taxi activity.
+- Trip-level metrics including average duration and distance per ride.
+- Geospatial analysis highlighting high-demand pickup locations across NYC.
+- Temporal analysis of taxi demand by day of the week and hour of the day.
+
 ## Dashboard Content
-### KPI Cards
-![Pickup and dropoff](../screenshots/big_numbers.png)
-![Average duration and distance](../screenshots/big_numbers_pt2.png)
 
-## Map Pickup
-![Map Pickup](../screenshots/map_pickup.png)
+| Pickup and Dropoff | Average Duration and Distance |
+|-----------|----------------------|
+| ![Pickup and Dropoff](../screenshots/big_numbers.PNG) | ![Average Duration and Distance](../screenshots/big_numbers_pt2.PNG) |
 
-### Trips by Day and Hour
-![Trips by Day](../screenshots/total_trips_per_day.png)
-![Trips by Hour](../screenshots/total_trips_per_hour.png)
+| Map Pickup |
+|----------------|------------|
+| ![Map Pickup](../screenshots/map_pickup.PNG) |
+
+| Trips by Day | Trips by Hour |
+|---------------|---------------|
+| ![Trips by Day](../screenshots/total_trips_per_day.PNG) | ![Trips by Hour](../screenshots/total_trips_per_hour.PNG) |
